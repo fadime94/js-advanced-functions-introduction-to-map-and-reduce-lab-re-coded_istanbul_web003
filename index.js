@@ -64,10 +64,9 @@ function reduceToTotal(sourceArray, startingPoint=0){
 
 
 /* function reduceToAllTrue(sourceArray){
-    const newArr = sourceArray.reduce((acc, el) => acc+el,
-        true
+    const newArr = sourceArray.reduce((acc, el) => (el=> el? true:false)
     );
-return newArr;
+
 } */
 
 function reduceToAllTrue(sourceArray){
